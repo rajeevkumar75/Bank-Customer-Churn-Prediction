@@ -15,6 +15,21 @@ def add_features(df):
         (df['active_member'] == 0) & (df['balance'] > 50000)
     ).astype(int)
 
+    # 3️ Tenure-based loyalty
+    df['new_customer'] = (df['tenure'] <= 2).astype(int)
+    df['long_term_customer'] = (df['tenure'] >= 7).astype(int)
 
+    # 4️ Interaction features
+    df['credit_age_interaction'] = df['credit_score'] * df['age']
+    df['balance_product_interaction'] = df['balance'] * df['products_number']
+
+    # 5️ Customer value segmentation
+    df['customer_value_score'] = (
+        0.4 * df['balance_salary_ratio'] +
+        0.3 * df['products_number'] +
+        0.3 * df['active_member']
+    )
+
+    return df
 
 
