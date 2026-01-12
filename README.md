@@ -1,10 +1,12 @@
 # **Bank Customer Churn Prediction:-**
 
-# Bank Customer Churn Risk System
-
 Industry-oriented machine learning project to predict and rank bank customers by churn risk.
 
 🚧 Project under active development.
+
+
+
+
 
 Customer churn risk ↑ because:
 1. Low activity (35%)
