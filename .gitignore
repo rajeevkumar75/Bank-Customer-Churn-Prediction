@@ -1,4 +1,6 @@
-.venv/
-models/
+venv/
 __pycache__/
 *.pyc
+
+notebooks/logs.log
+models/logs.log

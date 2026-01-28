@@ -4,4 +4,9 @@ scikit-learn
 matplotlib
 seaborn
 streamlit
-
+xgboost
+catboost
+joblib
+pycaret
+shap
+imbalanced-learn
