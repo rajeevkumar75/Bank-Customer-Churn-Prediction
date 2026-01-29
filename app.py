@@ -2,167 +2,219 @@ import streamlit as st
 import pandas as pd
 import joblib
 import plotly.graph_objects as go
+import plotly.express as px
+import os
+from pycaret.classification import load_model, predict_model
 
-# -------------------------------
-# Page Configuration
-# -------------------------------
+
 st.set_page_config(
-    page_title="TrueSource | Churn Analytics",
+    page_title="Bank Churn Predictor",
     page_icon="🏦",
-    layout="wide",
-    initial_sidebar_state="expanded"
+    layout="wide"
 )
 
-# Custom CSS for a polished look
-# Change this part in your app.py
+
 st.markdown("""
     <style>
-    .main {
-        background-color: #f5f7f9;
-    }
-    .stButton>button {
-        width: 100%;
-        border-radius: 5px;
-        height: 3em;
-        background-color: #007bff;
-        color: white;
-    }
+    .main { background-color: #f8f9fa; }
+    div[data-testid="stMetricValue"] { font-size: 1.8rem; color: #004a99; }
+    .stAlert { border-radius: 10px; }
+    [data-testid="stSidebar"] { border-right: 1px solid #e0e0e0; }
+    .reportview-container .main .block-container { padding-top: 2rem; }
     </style>
-    """, unsafe_allow_html=True) # Corrected parameter name
+    """, unsafe_allow_html=True)
 
-# -------------------------------
-# Load Model
-# -------------------------------
+
 @st.cache_resource
-def load_model():
-    # Using cache_resource for the model object
-    return joblib.load("models/logistic_regression_churn.pkl")
+def load_assets():
+    # Loading model and preprocessing artifacts
+    model = load_model("models/catboost_classifier_model")
+    scaler = joblib.load("models/scaler.pkl")
+    le_gender = joblib.load("models/label_encoder_gender.pkl")
+    le_country = joblib.load("models/label_encoder_country.pkl")
+    return model, scaler, le_gender, le_country
 
 try:
-    model = load_model()
+    model, scaler, le_gender, le_country = load_assets()
 except Exception as e:
-    st.error("Model file not found. Please ensure the path is correct.")
+    st.error(f"Model Artifacts Not Found: {e}")
+    st.stop()
 
-# -------------------------------
-# Sidebar & About Me
-# -------------------------------
+
+def transform_data(df):
+    temp_df = df.copy()
+    
+
+    if 'gender' in temp_df.columns:
+        temp_df['gender'] = temp_df['gender'].astype(str).str.title()
+        gender_map = {label: i for i, label in enumerate(le_gender.classes_)}
+        temp_df['gender'] = temp_df['gender'].map(gender_map).fillna(-1)
+
+    if 'country' in temp_df.columns:
+        temp_df['country'] = temp_df['country'].astype(str).str.title()
+        country_map = {label: i for i, label in enumerate(le_country.classes_)}
+        temp_df['country'] = temp_df['country'].map(country_map).fillna(-1)
+
+    temp_df['balance_salary_ratio'] = temp_df['balance'] / (temp_df['estimated_salary'] + 1)
+    temp_df['tenure_age_ratio'] = temp_df['tenure'] / (temp_df['age'] + 1)
+    temp_df['credit_score_age_ratio'] = temp_df['credit_score'] / (temp_df['age'] + 1)
+    temp_df['balance_per_product'] = temp_df['balance'] / (temp_df['products_number'] + 1)
+    temp_df['is_senior'] = temp_df['age'].apply(lambda x: 1 if x >= 60 else 0)
+    
+    
+    cols_to_scale = [
+        'credit_score', 'age', 'tenure', 'balance', 'products_number', 
+        'estimated_salary', 'balance_salary_ratio', 'tenure_age_ratio', 
+        'credit_score_age_ratio', 'balance_per_product'
+    ]
+    existing_cols = [c for c in cols_to_scale if c in temp_df.columns]
+    temp_df[existing_cols] = scaler.transform(temp_df[existing_cols])
+    
+    return temp_df
+
+#SIDEBAR: ---
 with st.sidebar:
-    st.image("https://cdn-icons-png.flaticon.com/512/3135/3135715.png", width=100)
-    st.title("Project TrueSource")
-    st.info("Advancing data integrity and predictive transparency.")
+    st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
+    st.image("https://cdn-icons-png.flaticon.com/512/2830/2830284.png", width=80)
+    st.title('Bank Customer Churn Predictor')
+    st.markdown("</div>", unsafe_allow_html=True)
     
     st.divider()
+    app_mode = st.radio("Navigation", ["Single Prediction", "Batch Analysis", "Data Insights"])
+    st.divider()
     
-    st.subheader("👨‍💻 About Me")
-    st.markdown("""
-    **Lead Developer** Specializing in Machine Learning Operations (MLOps) and FinTech solutions. 
-    
-    * **Project:** [TrueSource](https://github.com)
-    * **Focus:** Predictive Analytics & Data Truth
-    * **Tech:** Python, PyCaret, Streamlit, Scikit-Learn
-    """)
+    #User-defined threshold for Risk Sensitivity
+    risk_threshold = st.slider("Churn Sensitivity Threshold", 0.05, 0.95, 0.5, 0.05,
+                              help=(
+        "Adjust the threshold to control how sensitive the model is to predicting churn. "
+        "Lower values increase the chance of flagging customers at risk (higher recall) "
+        "but may produce more false positives. "
+        "Recommended: 0.5 to balance risk detection and accuracy."
+    ))
     
     st.divider()
-    st.caption("© 2026 TrueSource Analytics v2.1")
+    st.caption("v1.2.0 | Engine: CatBoost")
+    st.caption("Built by Rajeev Kumar")
 
-# -------------------------------
-# Main UI Logic
-# -------------------------------
-st.title("🏦 Customer Churn Intelligence Portal")
-st.markdown("Extracting actionable insights from customer behavior data.")
-
-tabs = st.tabs(["🔍 Prediction Tool", "📊 Analytics Dashboard", "📄 Documentation"])
-
-with tabs[0]:
-    # Organizing inputs into columns for a "Dashboard" feel
+#MODE 1: SINGLE PREDICTION:---
+if app_mode == "Single Prediction":
+    st.title("📊 Individual Risk Assessment")
     col1, col2 = st.columns([2, 1])
     
     with col1:
-        st.subheader("Customer Demographics & Financials")
-        c1, c2 = st.columns(2)
-        with c1:
-            credit_score = st.slider("Credit Score", 300, 850, 650)
-            country = st.selectbox("Geography", ["France", "Spain", "Germany"])
-            gender = st.radio("Gender", ["Male", "Female"], horizontal=True)
-            age = st.number_input("Age", 18, 100, 35)
-        with c2:
-            balance = st.number_input("Account Balance ($)", 0.0, 300000.0, 50000.0)
-            estimated_salary = st.number_input("Estimated Salary ($)", 0.0, 250000.0, 50000.0)
-            tenure = st.slider("Tenure (Years)", 0, 10, 5)
-            products_number = st.selectbox("Number of Products", [1, 2, 3, 4])
-
-        st.subheader("Engagement Metrics")
-        e1, e2 = st.columns(2)
-        with e1:
-            credit_card = st.toggle("Has Credit Card", value=True)
-        with e2:
-            active_member = st.toggle("Is Active Member", value=False)
+        with st.container(border=True):
+            st.subheader("Customer Input Parameters")
+            c_a, c_b = st.columns(2)
+            with c_a:
+                country = st.selectbox("Geography", ["France", "Spain", "Germany"])
+                gender = st.radio("Gender", ["Male", "Female"], horizontal=True)
+                age = st.number_input("Age", 18, 100, 35)
+                tenure = st.slider("Tenure (Years)", 0, 10, 5)
+            with c_b:
+                credit_score = st.slider("Credit Score", 300, 850, 650)
+                balance = st.number_input("Balance ($)", 0.0, 300000.0, 10000.0)
+                products = st.number_input("Number of Products", 1, 4, 1)
+                salary = st.number_input("Estimated Salary ($)", 0.0, 300000.0, 50000.0)
+            
+            st.divider()
+            c_c, c_d = st.columns(2)
+            active = c_c.toggle("Is Active Member?", value=True)
+            has_card = c_d.toggle("Has Credit Card?", value=True)
 
     with col2:
-        st.subheader("Prediction Results")
-        
-        # Build Input Data
-        input_df = pd.DataFrame([{
-            "CreditScore": credit_score,
-            "Geography": country,
-            "Gender": gender,
-            "Age": age,
-            "Tenure": tenure,
-            "Balance": balance,
-            "NumOfProducts": products_number,
-            "HasCrCard": 1 if credit_card else 0,
-            "IsActiveMember": 1 if active_member else 0,
-            "EstimatedSalary": estimated_salary
-        }])
+        st.subheader("Analysis Result")
+        if st.button("Run Prediction", use_container_width=True):
+            input_df = pd.DataFrame([{
+                'credit_score': credit_score, 'country': country, 'gender': gender, 'age': age,
+                'tenure': tenure, 'balance': balance, 'products_number': products,
+                'credit_card': 1 if has_card else 0, 'active_member': 1 if active else 0,
+                'estimated_salary': salary
+            }])
+            
+            # Predict
+            processed = transform_data(input_df)
+            prediction = predict_model(model, data=processed)
+            
+            # Calculate Probability
+            prob = prediction['prediction_score'].iloc[0] if prediction['prediction_label'].iloc[0] == 1 else (1 - prediction['prediction_score'].iloc[0])
+            is_churn = 1 if prob >= risk_threshold else 0
+            
+            # Visual Feedback
+            if is_churn == 1:
+                st.error(f"### ALERT: High Risk ({prob:.1%})")
+                st.write("Customer meets threshold for churn intervention.")
+            else:
+                st.success(f"### Low Risk ({prob:.1%})")
+                st.write("Customer is likely to remain with the bank.")
 
-        if st.button("Run Risk Analysis"):
-            # Probability calculation
-            prob = model.predict_proba(input_df)[0][1]
-            risk_level = "HIGH" if prob >= 0.35 else "LOW"
-            color = "red" if risk_level == "HIGH" else "green"
-
-            # Gauge Chart for Risk
+            # Gauge Chart
             fig = go.Figure(go.Indicator(
                 mode = "gauge+number",
                 value = prob * 100,
-                domain = {'x': [0, 1], 'y': [0, 1]},
-                title = {'text': f"Churn Risk: {risk_level}", 'font': {'color': color}},
                 gauge = {
-                    'axis': {'range': [None, 100]},
-                    'bar': {'color': color},
-                    'steps': [
-                        {'range': [0, 35], 'color': "lightgreen"},
-                        {'range': [35, 100], 'color': "pink"}],
-                    'threshold': {
-                        'line': {'color': "black", 'width': 4},
-                        'thickness': 0.75,
-                        'value': 35}
+                    'axis': {'range': [0, 100]},
+                    'bar': {'color': "#ef4444" if is_churn == 1 else "#22c55e"},
+                    'steps': [{'range': [0, risk_threshold*100], 'color': "#e8f5e9"}, 
+                              {'range': [risk_threshold*100, 100], 'color': "#ffebee"}]
                 }
             ))
-            fig.update_layout(height=250, margin=dict(l=20, r=20, t=50, b=20))
+            fig.update_layout(height=260, margin=dict(l=20, r=20, t=40, b=0))
             st.plotly_chart(fig, use_container_width=True)
 
-            if risk_level == "HIGH":
-                st.warning(f"**Action Required:** Customer has a {prob:.1%} probability of leaving.")
-            else:
-                st.success(f"**Healthy Status:** Customer retention likely ({prob:.1%}).")
-
-with tabs[1]:
-    st.subheader("Dataset Context")
-    st.info("In a production environment, this tab would show global churn trends and model drift metrics.")
-    # Example metric row
-    m1, m2, m3 = st.columns(3)
-    m1.metric("Model Recall", "84%", "+2%")
-    m2.metric("Avg. Churn Risk", "22%", "-1.5%")
-    m3.metric("Data Freshness", "Live", "Stable")
-
-with tabs[2]:
-    st.markdown("""
-    ### Technical Implementation
-    - **Model:** Logistic Regression (Optimized via PyCaret)
-    - **Threshold:** 0.35 (Prioritizing Recall to capture potential churners)
-    - **Preprocessing:** Categorical encoding and Feature Scaling handled by Pipeline.
+#MODE 2: BATCH ANALYSIS:---
+elif app_mode == "Batch Analysis":
+    st.title("📂 Bulk Processing Engine")
+    uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
     
-    ### About TrueSource
-    This application is a module of the **TrueSource** ecosystem, focused on creating verifiable and transparent AI decision-making tools for the banking sector.
+    if uploaded_file:
+        raw_df = pd.read_csv(uploaded_file)
+        if st.button("Apply Batch Intelligence", use_container_width=True):
+            with st.spinner("Processing records..."):
+                try:
+                    processed_batch = transform_data(raw_df)
+                    results = predict_model(model, data=processed_batch)
+                    
+                    # Apply Threshold Correction
+                    results['churn_probability'] = results.apply(lambda r: r['prediction_score'] if r['prediction_label'] == 1 else (1 - r['prediction_score']), axis=1)
+                    results['final_prediction'] = (results['churn_probability'] >= risk_threshold).astype(int)
+                    
+                    st.divider()
+                    churn_count = results['final_prediction'].sum()
+                    rate = (churn_count / len(results)) * 100
+                    
+                    m1, m2, m3 = st.columns(3)
+                    m1.metric("Processed", len(results))
+                    m2.metric("Flagged Churners", churn_count)
+                    m3.metric("Churn Rate", f"{rate:.1f}%")
+                    
+                    st.subheader("Analysis Preview")
+                    st.dataframe(results[['churn_probability', 'final_prediction']].join(raw_df).sort_values(by='churn_probability', ascending=False).head(10))
+                    
+                    csv = results.to_csv(index=False).encode('utf-8')
+                    st.download_button("📥 Export Analysis Report", data=csv, file_name="Churn_Predicted.csv")
+                except Exception as e:
+                    st.error(f"Processing Error: {e}")
+
+#MODE 3: MODEL INSIGHTS ---
+elif app_mode == "Data Insights":
+    st.title("🧠 Dataset Insights")
+    
+    # Feature Importance (Simplified for View)
+    feat_data = pd.DataFrame({
+        'Feature': ['Age', 'NumProducts', 'IsActive', 'Balance', 'Geography', 'CreditScore', 'Salary'],
+        'Weight': [45, 25, 15, 8, 4, 2, 1]
+    }).sort_values('Weight')
+    
+    fig = px.bar(feat_data, x='Weight', y='Feature', orientation='h', color='Weight', 
+                 title="Key Factors Influencing Churn", color_continuous_scale='Blues')
+    st.plotly_chart(fig, use_container_width=True)
+    
+    st.info(f"""
+    **Threshold Strategy:**
+    A sensitivity of **{risk_threshold}** is currently active. 
+    This means the model prioritizes **Recall**, ensuring that the bank minimizes missing potential churners 
+    at the cost of a slightly higher false-alarm rate.
     """)
+
+st.divider()
+st.caption("Bank Customer Churn Prediction & Analysis Project (2026) | Developed by Rajeev Kumar")
