@@ -67,5 +67,5 @@ def preprocess_pipeline(file_path: str, output_file: str = "bank_churn_processed
     processed_path = os.path.join(output_dir, output_file)
     df.to_csv(processed_path, index=False)
     
-    print(f"✅ Feature Engineering & Preprocessing Complete.")
+    print(f" Feature Engineering & Preprocessing Complete.")
     return df
