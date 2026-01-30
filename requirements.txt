@@ -4,8 +4,8 @@ numpy>=1.26.0,<2.0.0
 scikit-learn>=1.5.0
 matplotlib>=3.8.0
 seaborn>=0.13.0
-pycaret==2.3.10
-imbalanced-learn==0.7.0
+pycaret>=3.0.0
+imbalanced-learn>=0.12.0
 plotly
 xgboost
 catboost

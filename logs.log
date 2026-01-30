@@ -10593,3 +10593,40 @@ Returning the number of logical cores instead. You can silence this warning by s
 'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
 2026-01-30 14:35:35,576:INFO:Initializing load_model()
 2026-01-30 14:35:35,576:INFO:load_model(model_name=models/catboost_classifier_model, platform=None, authentication=None, verbose=True)
+2026-01-30 14:43:15,876:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 14:43:15,876:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 14:43:15,876:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 14:43:15,876:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 14:43:17,460:INFO:Initializing load_model()
+2026-01-30 14:43:17,460:INFO:load_model(model_name=models/catboost_classifier_model, platform=None, authentication=None, verbose=True)
+2026-01-30 14:45:25,260:INFO:Initializing predict_model()
+2026-01-30 14:45:25,260:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B8D1AF6CD0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000001B8D17E1F90>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001B8CB71DD00>)
+2026-01-30 14:45:25,260:INFO:Checking exceptions
+2026-01-30 14:45:25,260:INFO:Preloading libraries
+2026-01-30 14:45:25,260:INFO:Set up data.
+2026-01-30 14:45:25,264:INFO:Set up index.
