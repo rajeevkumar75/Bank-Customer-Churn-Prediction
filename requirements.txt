@@ -9,6 +9,7 @@ joblib
 shap
 pycaret==2.3.10
 imbalanced-learn==0.7.0
-pandas==2.0.3
-numpy==1.25.0
+pandas==1.5.3
+numpy==1.23.5
+
 
