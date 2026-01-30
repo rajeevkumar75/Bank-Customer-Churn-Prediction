@@ -15,7 +15,7 @@ st.set_page_config(
 #HEADER :--
 st.markdown("""
 <div style="text-align:center;">
-    <h2>🏦 Bank Customer Churn Prediction</h2>
+    <h1>🏦 Bank Customer Churn Prediction</h1>
 </div>
 """, unsafe_allow_html=True)
 
