@@ -84,9 +84,9 @@ After comparison and tuning, **CatBoost Classifier** performed best overall.
 | Metric | Value |
 |------|------|
 | ROC-AUC | ~0.85 |
-| Recall | ~61% |
-| Precision | ~62% |
-| F1 Score | ~0.59 |
+| Recall | ~62% |
+| Precision | ~61% |
+| F1 Score | ~0.60 |
 
 CatBoost was chosen because it:
 - Handles categorical data efficiently
@@ -146,17 +146,14 @@ This allows business teams to adjust predictions based on **cost, risk, and avai
 ---
 
 ## 🔮 Future Improvements
+- Try on diff-diff Datasets
 - Add SHAP-based model explainability
 - Implement cost-sensitive learning
 - Deploy using FastAPI
 - Monitor model performance over time
+- Improve Batch Prediction
 
 ---
-
-## 👤 Author
-**Rajeev Kumar**  
-B.S. Computer Science & Data Analytics, IIT Patna  
-Data Science | Machine Learning | Applied Analytics
 
 ⭐ If you found this project useful, feel free to star the repository.
 
