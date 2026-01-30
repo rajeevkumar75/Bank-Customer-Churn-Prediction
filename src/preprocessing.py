@@ -60,12 +60,11 @@ def preprocess_pipeline(file_path: str, output_file: str = "bank_churn_processed
     scaler = StandardScaler()
     df[existing_numeric] = scaler.fit_transform(df[existing_numeric])
     joblib.dump(scaler, "models/scaler.pkl")
-    
-    #Saving
     output_dir = "data/processed"
     os.makedirs(output_dir, exist_ok=True)
     processed_path = os.path.join(output_dir, output_file)
     df.to_csv(processed_path, index=False)
     
     print(f" Feature Engineering & Preprocessing Complete.")
+
     return df
