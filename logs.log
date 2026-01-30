@@ -10583,3 +10583,13 @@ Returning the number of logical cores instead. You can silence this warning by s
 'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
 2026-01-30 14:27:52,453:INFO:Initializing load_model()
 2026-01-30 14:27:52,453:INFO:load_model(model_name=models/catboost_classifier_model, platform=None, authentication=None, verbose=True)
+2026-01-30 14:35:33,800:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 14:35:33,800:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 14:35:33,800:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 14:35:33,800:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 14:35:35,576:INFO:Initializing load_model()
+2026-01-30 14:35:35,576:INFO:load_model(model_name=models/catboost_classifier_model, platform=None, authentication=None, verbose=True)
