@@ -1,20 +1,21 @@
-# High-level UI and Data
+# Core Framework
 streamlit>=1.40.0
-pandas>=2.2.0
+
+# The Data Stack (Unpinned to allow Python 3.13 compatibility)
+pandas>=2.2.2
 numpy>=1.26.0,<2.0.0
 
-# The specialized ML stack
-pycaret>=3.3.2
+# The ML Stack
+pycaret
 scikit-learn>=1.5.0
 imbalanced-learn>=0.12.0
 
-# Visualization (keeping version compatible with PyCaret)
-matplotlib>=3.8.0
-seaborn>=0.13.0
+# Visuals & Helpers
+matplotlib
+seaborn
 plotly
-
-# Model Interpreters & Boosting
 xgboost
 catboost
 shap
+joblib
 joblib
