@@ -8209,3 +8209,2273 @@ Returning the number of logical cores instead. You can silence this warning by s
 2026-01-30 01:22:07,302:INFO:Preloading libraries
 2026-01-30 01:22:07,302:INFO:Set up data.
 2026-01-30 01:22:07,309:INFO:Set up index.
+2026-01-30 01:41:49,633:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 01:41:49,633:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 01:41:49,633:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 01:41:49,633:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 01:41:51,143:INFO:Initializing load_model()
+2026-01-30 01:41:51,143:INFO:load_model(model_name=models/catboost_classifier_model, platform=None, authentication=None, verbose=True)
+2026-01-30 01:41:55,804:INFO:Initializing predict_model()
+2026-01-30 01:41:55,804:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000019B094EC590>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x0000019B094D16D0>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000019B7E41A020>)
+2026-01-30 01:41:55,804:INFO:Checking exceptions
+2026-01-30 01:41:55,804:INFO:Preloading libraries
+2026-01-30 01:41:55,804:INFO:Set up data.
+2026-01-30 01:41:55,813:INFO:Set up index.
+2026-01-30 11:54:09,126:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 11:54:09,126:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 11:54:09,126:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 11:54:09,126:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 11:54:16,645:INFO:Initializing load_model()
+2026-01-30 11:54:16,645:INFO:load_model(model_name=models/catboost_classifier_model, platform=None, authentication=None, verbose=True)
+2026-01-30 11:54:26,795:INFO:Initializing predict_model()
+2026-01-30 11:54:26,795:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000209A6D2B050>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000209A80D8610>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000209A1065120>)
+2026-01-30 11:54:26,795:INFO:Checking exceptions
+2026-01-30 11:54:26,795:INFO:Preloading libraries
+2026-01-30 11:54:26,795:INFO:Set up data.
+2026-01-30 11:54:26,803:INFO:Set up index.
+2026-01-30 11:57:24,377:INFO:Initializing predict_model()
+2026-01-30 11:57:24,377:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000209A846D190>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000209A80D8610>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000209A8475760>)
+2026-01-30 11:57:24,377:INFO:Checking exceptions
+2026-01-30 11:57:24,377:INFO:Preloading libraries
+2026-01-30 11:57:24,377:INFO:Set up data.
+2026-01-30 11:57:24,384:INFO:Set up index.
+2026-01-30 12:00:35,153:INFO:Initializing predict_model()
+2026-01-30 12:00:35,164:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000209A8394F90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000209A80D8610>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000209A8477240>)
+2026-01-30 12:00:35,164:INFO:Checking exceptions
+2026-01-30 12:00:35,165:INFO:Preloading libraries
+2026-01-30 12:00:35,165:INFO:Set up data.
+2026-01-30 12:00:35,170:INFO:Set up index.
+2026-01-30 12:01:14,682:INFO:Initializing predict_model()
+2026-01-30 12:01:14,682:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000209A8414910>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000209A80D8610>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000209A84771A0>)
+2026-01-30 12:01:14,682:INFO:Checking exceptions
+2026-01-30 12:01:14,682:INFO:Preloading libraries
+2026-01-30 12:01:14,682:INFO:Set up data.
+2026-01-30 12:01:14,686:INFO:Set up index.
+2026-01-30 12:01:58,712:INFO:Initializing predict_model()
+2026-01-30 12:01:58,712:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000209A853D250>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000209A80D8610>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000020981D5AA20>)
+2026-01-30 12:01:58,712:INFO:Checking exceptions
+2026-01-30 12:01:58,712:INFO:Preloading libraries
+2026-01-30 12:01:58,712:INFO:Set up data.
+2026-01-30 12:01:58,716:INFO:Set up index.
+2026-01-30 12:02:12,771:INFO:Initializing predict_model()
+2026-01-30 12:02:12,771:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000209A85513D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000209A80D8610>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000209A8433600>)
+2026-01-30 12:02:12,771:INFO:Checking exceptions
+2026-01-30 12:02:12,771:INFO:Preloading libraries
+2026-01-30 12:02:12,771:INFO:Set up data.
+2026-01-30 12:02:12,778:INFO:Set up index.
+2026-01-30 12:02:18,430:INFO:Initializing predict_model()
+2026-01-30 12:02:18,437:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000209A85C4F90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000209A80D8610>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000209A8433B00>)
+2026-01-30 12:02:18,438:INFO:Checking exceptions
+2026-01-30 12:02:18,438:INFO:Preloading libraries
+2026-01-30 12:02:18,438:INFO:Set up data.
+2026-01-30 12:02:18,438:INFO:Set up index.
+2026-01-30 12:02:22,215:INFO:Initializing predict_model()
+2026-01-30 12:02:22,215:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000209A8609450>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000209A80D8610>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000209A8433CE0>)
+2026-01-30 12:02:22,215:INFO:Checking exceptions
+2026-01-30 12:02:22,215:INFO:Preloading libraries
+2026-01-30 12:02:22,215:INFO:Set up data.
+2026-01-30 12:02:22,222:INFO:Set up index.
+2026-01-30 12:06:29,478:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:06:29,478:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:06:29,478:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:06:29,478:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:06:31,583:INFO:Initializing load_model()
+2026-01-30 12:06:31,583:INFO:load_model(model_name=models/catboost_classifier_model, platform=None, authentication=None, verbose=True)
+2026-01-30 12:07:04,524:INFO:Initializing predict_model()
+2026-01-30 12:07:04,524:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001756E2FD450>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000001756E2D4310>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000017526C89EE0>)
+2026-01-30 12:07:04,524:INFO:Checking exceptions
+2026-01-30 12:07:04,524:INFO:Preloading libraries
+2026-01-30 12:07:04,524:INFO:Set up data.
+2026-01-30 12:07:04,530:INFO:Set up index.
+2026-01-30 12:07:18,285:INFO:Initializing predict_model()
+2026-01-30 12:07:18,285:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001756E2EC710>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000001756E2D4310>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001756E67F740>)
+2026-01-30 12:07:18,285:INFO:Checking exceptions
+2026-01-30 12:07:18,285:INFO:Preloading libraries
+2026-01-30 12:07:18,286:INFO:Set up data.
+2026-01-30 12:07:18,290:INFO:Set up index.
+2026-01-30 12:07:23,117:INFO:Initializing predict_model()
+2026-01-30 12:07:23,117:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001756E658150>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000001756E2D4310>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001756E67F2E0>)
+2026-01-30 12:07:23,117:INFO:Checking exceptions
+2026-01-30 12:07:23,117:INFO:Preloading libraries
+2026-01-30 12:07:23,117:INFO:Set up data.
+2026-01-30 12:07:23,123:INFO:Set up index.
+2026-01-30 12:07:31,977:INFO:Initializing predict_model()
+2026-01-30 12:07:31,977:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001756E6FD1D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000001756E2D4310>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001756E67F240>)
+2026-01-30 12:07:31,977:INFO:Checking exceptions
+2026-01-30 12:07:31,977:INFO:Preloading libraries
+2026-01-30 12:07:31,977:INFO:Set up data.
+2026-01-30 12:07:31,977:INFO:Set up index.
+2026-01-30 12:09:31,281:INFO:Initializing predict_model()
+2026-01-30 12:09:31,281:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001756E6F8A10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000001756E2D4310>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001756E57EC00>)
+2026-01-30 12:09:31,281:INFO:Checking exceptions
+2026-01-30 12:09:31,281:INFO:Preloading libraries
+2026-01-30 12:09:31,281:INFO:Set up data.
+2026-01-30 12:09:31,300:INFO:Set up index.
+2026-01-30 12:09:47,494:INFO:Initializing predict_model()
+2026-01-30 12:09:47,494:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001756E8012D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000001756E2D4310>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000017526C885E0>)
+2026-01-30 12:09:47,494:INFO:Checking exceptions
+2026-01-30 12:09:47,494:INFO:Preloading libraries
+2026-01-30 12:09:47,494:INFO:Set up data.
+2026-01-30 12:09:47,501:INFO:Set up index.
+2026-01-30 12:09:53,050:INFO:Initializing predict_model()
+2026-01-30 12:09:53,050:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001756E805010>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000001756E2D4310>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001756E782700>)
+2026-01-30 12:09:53,050:INFO:Checking exceptions
+2026-01-30 12:09:53,050:INFO:Preloading libraries
+2026-01-30 12:09:53,050:INFO:Set up data.
+2026-01-30 12:09:53,050:INFO:Set up index.
+2026-01-30 12:10:40,188:INFO:Initializing predict_model()
+2026-01-30 12:10:40,188:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001756E8C6350>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000001756E2D4310>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001756EA66CA0>)
+2026-01-30 12:10:40,195:INFO:Checking exceptions
+2026-01-30 12:10:40,195:INFO:Preloading libraries
+2026-01-30 12:10:40,195:INFO:Set up data.
+2026-01-30 12:10:40,195:INFO:Set up index.
+2026-01-30 12:12:30,080:INFO:Initializing predict_model()
+2026-01-30 12:12:30,080:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001756EAA7FD0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000001756E2D4310>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001756EA671A0>)
+2026-01-30 12:12:30,080:INFO:Checking exceptions
+2026-01-30 12:12:30,080:INFO:Preloading libraries
+2026-01-30 12:12:30,080:INFO:Set up data.
+2026-01-30 12:12:30,080:INFO:Set up index.
+2026-01-30 12:12:39,937:INFO:Initializing predict_model()
+2026-01-30 12:12:39,937:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001756EAAFFD0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000001756E2D4310>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000017526C882C0>)
+2026-01-30 12:12:39,937:INFO:Checking exceptions
+2026-01-30 12:12:39,937:INFO:Preloading libraries
+2026-01-30 12:12:39,937:INFO:Set up data.
+2026-01-30 12:12:39,940:INFO:Set up index.
+2026-01-30 12:12:43,322:INFO:Initializing predict_model()
+2026-01-30 12:12:43,322:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001756EA25F50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000001756E2D4310>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001756E80BD80>)
+2026-01-30 12:12:43,322:INFO:Checking exceptions
+2026-01-30 12:12:43,322:INFO:Preloading libraries
+2026-01-30 12:12:43,322:INFO:Set up data.
+2026-01-30 12:12:43,322:INFO:Set up index.
+2026-01-30 12:16:07,752:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:16:07,752:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:16:07,752:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:16:07,752:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:16:09,571:INFO:Initializing load_model()
+2026-01-30 12:16:09,571:INFO:load_model(model_name=models/catboost_classifier_model, platform=None, authentication=None, verbose=True)
+2026-01-30 12:16:18,393:INFO:Initializing predict_model()
+2026-01-30 12:16:18,399:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EDE19B4A10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000001EDE193CCD0>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001EDC381AAC0>)
+2026-01-30 12:16:18,399:INFO:Checking exceptions
+2026-01-30 12:16:18,399:INFO:Preloading libraries
+2026-01-30 12:16:18,400:INFO:Set up data.
+2026-01-30 12:16:18,400:INFO:Set up index.
+2026-01-30 12:17:07,119:INFO:Initializing predict_model()
+2026-01-30 12:17:07,119:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EDE1D0D090>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000001EDE193CCD0>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001EDE1D15B20>)
+2026-01-30 12:17:07,119:INFO:Checking exceptions
+2026-01-30 12:17:07,119:INFO:Preloading libraries
+2026-01-30 12:17:07,119:INFO:Set up data.
+2026-01-30 12:17:07,119:INFO:Set up index.
+2026-01-30 12:17:10,386:INFO:Initializing predict_model()
+2026-01-30 12:17:10,386:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EDE194A3D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000001EDE193CCD0>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001EDE1D16AC0>)
+2026-01-30 12:17:10,386:INFO:Checking exceptions
+2026-01-30 12:17:10,386:INFO:Preloading libraries
+2026-01-30 12:17:10,386:INFO:Set up data.
+2026-01-30 12:17:10,388:INFO:Set up index.
+2026-01-30 12:17:10,767:INFO:Initializing predict_model()
+2026-01-30 12:17:10,767:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EDE1D0CFD0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000001EDE193CCD0>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001EDE1D3B600>)
+2026-01-30 12:17:10,767:INFO:Checking exceptions
+2026-01-30 12:17:10,773:INFO:Preloading libraries
+2026-01-30 12:17:10,773:INFO:Set up data.
+2026-01-30 12:17:10,780:INFO:Set up index.
+2026-01-30 12:17:11,003:INFO:Initializing predict_model()
+2026-01-30 12:17:11,003:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EDE1DB0510>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000001EDE193CCD0>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001EDE1D3B2E0>)
+2026-01-30 12:17:11,093:INFO:Checking exceptions
+2026-01-30 12:17:11,093:INFO:Preloading libraries
+2026-01-30 12:17:11,093:INFO:Set up data.
+2026-01-30 12:17:11,099:INFO:Set up index.
+2026-01-30 12:17:27,474:INFO:Initializing predict_model()
+2026-01-30 12:17:27,474:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EDE1D04F90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000001EDE193CCD0>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001EDE1C3E8E0>)
+2026-01-30 12:17:27,474:INFO:Checking exceptions
+2026-01-30 12:17:27,474:INFO:Preloading libraries
+2026-01-30 12:17:27,474:INFO:Set up data.
+2026-01-30 12:17:27,481:INFO:Set up index.
+2026-01-30 12:17:36,802:INFO:Initializing predict_model()
+2026-01-30 12:17:36,802:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EDE1D2B5D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000001EDE193CCD0>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001EDE1D172E0>)
+2026-01-30 12:17:36,802:INFO:Checking exceptions
+2026-01-30 12:17:36,802:INFO:Preloading libraries
+2026-01-30 12:17:36,802:INFO:Set up data.
+2026-01-30 12:17:36,807:INFO:Set up index.
+2026-01-30 12:17:40,614:INFO:Initializing predict_model()
+2026-01-30 12:17:40,614:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EDE1CACED0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000001EDE193CCD0>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001EDE1D3BEC0>)
+2026-01-30 12:17:40,614:INFO:Checking exceptions
+2026-01-30 12:17:40,614:INFO:Preloading libraries
+2026-01-30 12:17:40,614:INFO:Set up data.
+2026-01-30 12:17:40,615:INFO:Set up index.
+2026-01-30 12:18:39,155:INFO:Initializing load_model()
+2026-01-30 12:18:39,155:INFO:load_model(model_name=models/catboost_classifier_model, platform=None, authentication=None, verbose=True)
+2026-01-30 12:22:18,279:INFO:Initializing predict_model()
+2026-01-30 12:22:18,279:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001756EB32ED0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000001756E2D4310>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001756EA66AC0>)
+2026-01-30 12:22:18,279:INFO:Checking exceptions
+2026-01-30 12:22:18,279:INFO:Preloading libraries
+2026-01-30 12:22:18,279:INFO:Set up data.
+2026-01-30 12:22:18,295:INFO:Set up index.
+2026-01-30 12:22:53,533:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:22:53,533:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:22:53,533:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:22:53,533:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:22:55,153:INFO:Initializing load_model()
+2026-01-30 12:22:55,153:INFO:load_model(model_name=models/catboost_classifier_model, platform=None, authentication=None, verbose=True)
+2026-01-30 12:23:09,860:INFO:Initializing predict_model()
+2026-01-30 12:23:09,860:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000240E1C3FD10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000240E1C24910>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000240BCAD5A80>)
+2026-01-30 12:23:09,860:INFO:Checking exceptions
+2026-01-30 12:23:09,860:INFO:Preloading libraries
+2026-01-30 12:23:09,860:INFO:Set up data.
+2026-01-30 12:23:09,866:INFO:Set up index.
+2026-01-30 12:23:24,039:INFO:Initializing predict_model()
+2026-01-30 12:23:24,041:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000240E3063950>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000240E1C24910>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000240E3075580>)
+2026-01-30 12:23:24,041:INFO:Checking exceptions
+2026-01-30 12:23:24,041:INFO:Preloading libraries
+2026-01-30 12:23:24,041:INFO:Set up data.
+2026-01-30 12:23:24,043:INFO:Set up index.
+2026-01-30 12:23:30,193:INFO:Initializing predict_model()
+2026-01-30 12:23:30,193:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000240E300AD10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000240E1C24910>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000240E30765C0>)
+2026-01-30 12:23:30,194:INFO:Checking exceptions
+2026-01-30 12:23:30,194:INFO:Preloading libraries
+2026-01-30 12:23:30,194:INFO:Set up data.
+2026-01-30 12:23:30,195:INFO:Set up index.
+2026-01-30 12:23:34,817:INFO:Initializing predict_model()
+2026-01-30 12:23:34,817:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000240E3062D50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000240E1C24910>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000240E3076020>)
+2026-01-30 12:23:34,817:INFO:Checking exceptions
+2026-01-30 12:23:34,817:INFO:Preloading libraries
+2026-01-30 12:23:34,817:INFO:Set up data.
+2026-01-30 12:23:34,817:INFO:Set up index.
+2026-01-30 12:23:38,040:INFO:Initializing predict_model()
+2026-01-30 12:23:38,040:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000240E3071AD0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000240E1C24910>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000240BC8D3380>)
+2026-01-30 12:23:38,040:INFO:Checking exceptions
+2026-01-30 12:23:38,040:INFO:Preloading libraries
+2026-01-30 12:23:38,040:INFO:Set up data.
+2026-01-30 12:23:38,046:INFO:Set up index.
+2026-01-30 12:23:40,797:INFO:Initializing predict_model()
+2026-01-30 12:23:40,798:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000240E1C26CD0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000240E1C24910>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000240E1DC3D80>)
+2026-01-30 12:23:40,798:INFO:Checking exceptions
+2026-01-30 12:23:40,798:INFO:Preloading libraries
+2026-01-30 12:23:40,798:INFO:Set up data.
+2026-01-30 12:23:40,799:INFO:Set up index.
+2026-01-30 12:23:42,695:INFO:Initializing predict_model()
+2026-01-30 12:23:42,695:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000240E305DE50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000240E1C24910>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000240E3075BC0>)
+2026-01-30 12:23:42,695:INFO:Checking exceptions
+2026-01-30 12:23:42,695:INFO:Preloading libraries
+2026-01-30 12:23:42,695:INFO:Set up data.
+2026-01-30 12:23:42,699:INFO:Set up index.
+2026-01-30 12:23:45,664:INFO:Initializing predict_model()
+2026-01-30 12:23:45,664:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000240E1CA1FD0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000240E1C24910>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000240E30754E0>)
+2026-01-30 12:23:45,664:INFO:Checking exceptions
+2026-01-30 12:23:45,664:INFO:Preloading libraries
+2026-01-30 12:23:45,664:INFO:Set up data.
+2026-01-30 12:23:45,668:INFO:Set up index.
+2026-01-30 12:23:47,962:INFO:Initializing predict_model()
+2026-01-30 12:23:47,962:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002409B686510>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000240E1C24910>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000240E3076200>)
+2026-01-30 12:23:47,962:INFO:Checking exceptions
+2026-01-30 12:23:47,962:INFO:Preloading libraries
+2026-01-30 12:23:47,962:INFO:Set up data.
+2026-01-30 12:23:47,962:INFO:Set up index.
+2026-01-30 12:23:50,066:INFO:Initializing predict_model()
+2026-01-30 12:23:50,066:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000240E3060ED0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000240E1C24910>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000240E3075800>)
+2026-01-30 12:23:50,066:INFO:Checking exceptions
+2026-01-30 12:23:50,066:INFO:Preloading libraries
+2026-01-30 12:23:50,066:INFO:Set up data.
+2026-01-30 12:23:50,066:INFO:Set up index.
+2026-01-30 12:23:59,401:INFO:Initializing predict_model()
+2026-01-30 12:23:59,401:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000240E1C38D90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000240E1C24910>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000240E3077EC0>)
+2026-01-30 12:23:59,401:INFO:Checking exceptions
+2026-01-30 12:23:59,401:INFO:Preloading libraries
+2026-01-30 12:23:59,401:INFO:Set up data.
+2026-01-30 12:23:59,407:INFO:Set up index.
+2026-01-30 12:24:06,407:INFO:Initializing predict_model()
+2026-01-30 12:24:06,407:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000240E1CA12D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000240E1C24910>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000240E3077D80>)
+2026-01-30 12:24:06,407:INFO:Checking exceptions
+2026-01-30 12:24:06,407:INFO:Preloading libraries
+2026-01-30 12:24:06,407:INFO:Set up data.
+2026-01-30 12:24:06,414:INFO:Set up index.
+2026-01-30 12:24:11,781:INFO:Initializing predict_model()
+2026-01-30 12:24:11,781:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000240E1CA0550>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000240E1C24910>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000240E3076520>)
+2026-01-30 12:24:11,781:INFO:Checking exceptions
+2026-01-30 12:24:11,781:INFO:Preloading libraries
+2026-01-30 12:24:11,781:INFO:Set up data.
+2026-01-30 12:24:11,788:INFO:Set up index.
+2026-01-30 12:24:15,205:INFO:Initializing predict_model()
+2026-01-30 12:24:15,205:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000240E3034B90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000240E1C24910>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000240E30762A0>)
+2026-01-30 12:24:15,205:INFO:Checking exceptions
+2026-01-30 12:24:15,205:INFO:Preloading libraries
+2026-01-30 12:24:15,205:INFO:Set up data.
+2026-01-30 12:24:15,209:INFO:Set up index.
+2026-01-30 12:24:17,740:INFO:Initializing predict_model()
+2026-01-30 12:24:17,740:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000240E3035A90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000240E1C24910>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000240E3076FC0>)
+2026-01-30 12:24:17,740:INFO:Checking exceptions
+2026-01-30 12:24:17,740:INFO:Preloading libraries
+2026-01-30 12:24:17,740:INFO:Set up data.
+2026-01-30 12:24:17,747:INFO:Set up index.
+2026-01-30 12:24:22,013:INFO:Initializing predict_model()
+2026-01-30 12:24:22,013:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000240E3071710>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000240E1C24910>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000240E3077EC0>)
+2026-01-30 12:24:22,013:INFO:Checking exceptions
+2026-01-30 12:24:22,013:INFO:Preloading libraries
+2026-01-30 12:24:22,013:INFO:Set up data.
+2026-01-30 12:24:22,013:INFO:Set up index.
+2026-01-30 12:26:37,803:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:26:37,803:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:26:37,803:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:26:37,803:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:26:39,207:INFO:Initializing load_model()
+2026-01-30 12:26:39,207:INFO:load_model(model_name=models/catboost_classifier_model, platform=None, authentication=None, verbose=True)
+2026-01-30 12:26:44,527:INFO:Initializing predict_model()
+2026-01-30 12:26:44,527:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002A35FBE0810>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000002A35FBE0ED0>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002A33AA774C0>)
+2026-01-30 12:26:44,527:INFO:Checking exceptions
+2026-01-30 12:26:44,527:INFO:Preloading libraries
+2026-01-30 12:26:44,527:INFO:Set up data.
+2026-01-30 12:26:44,534:INFO:Set up index.
+2026-01-30 12:26:48,103:INFO:Initializing predict_model()
+2026-01-30 12:26:48,103:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002A35FBFDB50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000002A35FBE0ED0>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002A361076E80>)
+2026-01-30 12:26:48,103:INFO:Checking exceptions
+2026-01-30 12:26:48,103:INFO:Preloading libraries
+2026-01-30 12:26:48,103:INFO:Set up data.
+2026-01-30 12:26:48,103:INFO:Set up index.
+2026-01-30 12:26:56,082:INFO:Initializing predict_model()
+2026-01-30 12:26:56,082:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002A35FF43150>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000002A35FBE0ED0>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002A35FF2AD40>)
+2026-01-30 12:26:56,082:INFO:Checking exceptions
+2026-01-30 12:26:56,082:INFO:Preloading libraries
+2026-01-30 12:26:56,082:INFO:Set up data.
+2026-01-30 12:26:56,089:INFO:Set up index.
+2026-01-30 12:26:58,950:INFO:Initializing predict_model()
+2026-01-30 12:26:58,950:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002A3610658D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000002A35FBE0ED0>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002A361075260>)
+2026-01-30 12:26:58,950:INFO:Checking exceptions
+2026-01-30 12:26:58,950:INFO:Preloading libraries
+2026-01-30 12:26:58,950:INFO:Set up data.
+2026-01-30 12:26:58,953:INFO:Set up index.
+2026-01-30 12:27:01,464:INFO:Initializing predict_model()
+2026-01-30 12:27:01,464:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002A35FF43850>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000002A35FBE0ED0>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002A33A8A8E00>)
+2026-01-30 12:27:01,464:INFO:Checking exceptions
+2026-01-30 12:27:01,464:INFO:Preloading libraries
+2026-01-30 12:27:01,464:INFO:Set up data.
+2026-01-30 12:27:01,464:INFO:Set up index.
+2026-01-30 12:27:04,631:INFO:Initializing predict_model()
+2026-01-30 12:27:04,631:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002A361067350>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000002A35FBE0ED0>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002A3610763E0>)
+2026-01-30 12:27:04,631:INFO:Checking exceptions
+2026-01-30 12:27:04,632:INFO:Preloading libraries
+2026-01-30 12:27:04,632:INFO:Set up data.
+2026-01-30 12:27:04,632:INFO:Set up index.
+2026-01-30 12:27:37,849:INFO:Initializing predict_model()
+2026-01-30 12:27:37,849:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002A3610723D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000002A35FBE0ED0>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002A361076340>)
+2026-01-30 12:27:37,849:INFO:Checking exceptions
+2026-01-30 12:27:37,849:INFO:Preloading libraries
+2026-01-30 12:27:37,849:INFO:Set up data.
+2026-01-30 12:27:37,849:INFO:Set up index.
+2026-01-30 12:29:06,177:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:29:06,177:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:29:06,177:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:29:06,177:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:29:07,737:INFO:Initializing load_model()
+2026-01-30 12:29:07,737:INFO:load_model(model_name=models/catboost_classifier_model, platform=None, authentication=None, verbose=True)
+2026-01-30 12:30:03,119:INFO:Initializing predict_model()
+2026-01-30 12:30:03,119:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000023406389DD0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000234060CCD90>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000233F1F09120>)
+2026-01-30 12:30:03,119:INFO:Checking exceptions
+2026-01-30 12:30:03,121:INFO:Preloading libraries
+2026-01-30 12:30:03,121:INFO:Set up data.
+2026-01-30 12:30:03,123:INFO:Set up index.
+2026-01-30 12:32:44,769:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:32:44,769:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:32:44,769:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:32:44,769:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:32:46,029:INFO:Initializing load_model()
+2026-01-30 12:32:46,029:INFO:load_model(model_name=models/catboost_classifier_model, platform=None, authentication=None, verbose=True)
+2026-01-30 12:33:12,227:INFO:Initializing predict_model()
+2026-01-30 12:33:12,227:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000174F2ADD290>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000174F2AECAD0>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000174CEFF8B80>)
+2026-01-30 12:33:12,227:INFO:Checking exceptions
+2026-01-30 12:33:12,227:INFO:Preloading libraries
+2026-01-30 12:33:12,227:INFO:Set up data.
+2026-01-30 12:33:12,231:INFO:Set up index.
+2026-01-30 12:33:30,883:INFO:Initializing predict_model()
+2026-01-30 12:33:30,883:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000174F2EE8D90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000174F2AECAD0>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000174F2E1B240>)
+2026-01-30 12:33:30,883:INFO:Checking exceptions
+2026-01-30 12:33:30,883:INFO:Preloading libraries
+2026-01-30 12:33:30,883:INFO:Set up data.
+2026-01-30 12:33:30,890:INFO:Set up index.
+2026-01-30 12:33:38,896:INFO:Initializing predict_model()
+2026-01-30 12:33:38,896:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000174F2EF97D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000174F2AECAD0>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000174F2E1B1A0>)
+2026-01-30 12:33:38,896:INFO:Checking exceptions
+2026-01-30 12:33:38,896:INFO:Preloading libraries
+2026-01-30 12:33:38,896:INFO:Set up data.
+2026-01-30 12:33:38,901:INFO:Set up index.
+2026-01-30 12:33:48,799:INFO:Initializing predict_model()
+2026-01-30 12:33:48,799:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000174F5049450>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000174F2AECAD0>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000174A85682C0>)
+2026-01-30 12:33:48,799:INFO:Checking exceptions
+2026-01-30 12:33:48,799:INFO:Preloading libraries
+2026-01-30 12:33:48,799:INFO:Set up data.
+2026-01-30 12:33:48,806:INFO:Set up index.
+2026-01-30 12:34:02,563:INFO:Initializing predict_model()
+2026-01-30 12:34:02,563:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000174F55D3110>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000174F2AECAD0>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000174EF2D0900>)
+2026-01-30 12:34:02,563:INFO:Checking exceptions
+2026-01-30 12:34:02,563:INFO:Preloading libraries
+2026-01-30 12:34:02,563:INFO:Set up data.
+2026-01-30 12:34:02,577:INFO:Set up index.
+2026-01-30 12:37:08,550:INFO:Initializing predict_model()
+2026-01-30 12:37:08,551:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000174F55D2A90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000174F2AECAD0>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000174F2E1B240>)
+2026-01-30 12:37:08,551:INFO:Checking exceptions
+2026-01-30 12:37:08,551:INFO:Preloading libraries
+2026-01-30 12:37:08,551:INFO:Set up data.
+2026-01-30 12:37:08,557:INFO:Set up index.
+2026-01-30 12:40:06,721:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:40:06,721:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:40:06,722:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:40:06,722:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:40:08,255:INFO:Initializing load_model()
+2026-01-30 12:40:08,255:INFO:load_model(model_name=models/catboost_classifier_model, platform=None, authentication=None, verbose=True)
+2026-01-30 12:42:15,626:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:42:15,626:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:42:15,626:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:42:15,627:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:42:16,912:INFO:Initializing load_model()
+2026-01-30 12:42:16,912:INFO:load_model(model_name=models/catboost_classifier_model, platform=None, authentication=None, verbose=True)
+2026-01-30 12:42:22,208:INFO:Initializing predict_model()
+2026-01-30 12:42:22,208:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000023D7F32B590>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x0000023D7F309350>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000023D7F5EF740>)
+2026-01-30 12:42:22,208:INFO:Checking exceptions
+2026-01-30 12:42:22,208:INFO:Preloading libraries
+2026-01-30 12:42:22,208:INFO:Set up data.
+2026-01-30 12:42:22,216:INFO:Set up index.
+2026-01-30 12:42:31,041:INFO:Initializing predict_model()
+2026-01-30 12:42:31,041:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000023D7F83C850>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x0000023D7F309350>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000023D7F82EE80>)
+2026-01-30 12:42:31,041:INFO:Checking exceptions
+2026-01-30 12:42:31,041:INFO:Preloading libraries
+2026-01-30 12:42:31,041:INFO:Set up data.
+2026-01-30 12:42:31,049:INFO:Set up index.
+2026-01-30 12:42:34,374:INFO:Initializing predict_model()
+2026-01-30 12:42:34,374:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000023D7F5E9250>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x0000023D7F309350>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000023D3768B100>)
+2026-01-30 12:42:34,374:INFO:Checking exceptions
+2026-01-30 12:42:34,374:INFO:Preloading libraries
+2026-01-30 12:42:34,374:INFO:Set up data.
+2026-01-30 12:42:34,381:INFO:Set up index.
+2026-01-30 12:42:40,291:INFO:Initializing predict_model()
+2026-01-30 12:42:40,291:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000023D7F308F90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x0000023D7F309350>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000023D7F84D760>)
+2026-01-30 12:42:40,291:INFO:Checking exceptions
+2026-01-30 12:42:40,291:INFO:Preloading libraries
+2026-01-30 12:42:40,291:INFO:Set up data.
+2026-01-30 12:42:40,294:INFO:Set up index.
+2026-01-30 12:42:41,835:INFO:Initializing predict_model()
+2026-01-30 12:42:41,837:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000023D7F30A090>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x0000023D7F309350>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000023D7A9D16C0>)
+2026-01-30 12:42:41,837:INFO:Checking exceptions
+2026-01-30 12:42:41,837:INFO:Preloading libraries
+2026-01-30 12:42:41,837:INFO:Set up data.
+2026-01-30 12:42:41,840:INFO:Set up index.
+2026-01-30 12:43:34,284:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:43:34,285:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:43:34,285:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:43:34,285:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:43:35,824:INFO:Initializing load_model()
+2026-01-30 12:43:35,824:INFO:load_model(model_name=models/catboost_classifier_model, platform=None, authentication=None, verbose=True)
+2026-01-30 12:43:42,269:INFO:Initializing predict_model()
+2026-01-30 12:43:42,269:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002A349002250>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000002A347FD5090>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002A322E5EB60>)
+2026-01-30 12:43:42,269:INFO:Checking exceptions
+2026-01-30 12:43:42,270:INFO:Preloading libraries
+2026-01-30 12:43:42,270:INFO:Set up data.
+2026-01-30 12:43:42,275:INFO:Set up index.
+2026-01-30 12:46:34,323:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:46:34,323:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:46:34,324:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:46:34,324:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:46:35,946:INFO:Initializing load_model()
+2026-01-30 12:46:35,946:INFO:load_model(model_name=models/catboost_classifier_model, platform=None, authentication=None, verbose=True)
+2026-01-30 12:46:47,041:INFO:Initializing predict_model()
+2026-01-30 12:46:47,041:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000022E84A3A890>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x0000022E84A206D0>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000022E7E935A80>)
+2026-01-30 12:46:47,041:INFO:Checking exceptions
+2026-01-30 12:46:47,041:INFO:Preloading libraries
+2026-01-30 12:46:47,041:INFO:Set up data.
+2026-01-30 12:46:47,047:INFO:Set up index.
+2026-01-30 12:47:13,102:INFO:Initializing predict_model()
+2026-01-30 12:47:13,102:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000022E84A49610>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x0000022E84A206D0>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000022E84295440>)
+2026-01-30 12:47:13,102:INFO:Checking exceptions
+2026-01-30 12:47:13,102:INFO:Preloading libraries
+2026-01-30 12:47:13,102:INFO:Set up data.
+2026-01-30 12:47:13,109:INFO:Set up index.
+2026-01-30 12:50:27,416:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:50:27,416:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:50:27,416:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:50:27,416:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:50:29,426:INFO:Initializing load_model()
+2026-01-30 12:50:29,426:INFO:load_model(model_name=models/catboost_classifier_model, platform=None, authentication=None, verbose=True)
+2026-01-30 12:51:49,779:INFO:Initializing predict_model()
+2026-01-30 12:51:49,779:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000022E84D48E50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x0000022E84A206D0>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000022E84DE1BC0>)
+2026-01-30 12:51:49,779:INFO:Checking exceptions
+2026-01-30 12:51:49,779:INFO:Preloading libraries
+2026-01-30 12:51:49,779:INFO:Set up data.
+2026-01-30 12:51:49,782:INFO:Set up index.
+2026-01-30 12:52:00,908:INFO:Initializing predict_model()
+2026-01-30 12:52:00,908:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000022E84E276D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x0000022E84A206D0>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000022E84DE1EE0>)
+2026-01-30 12:52:00,908:INFO:Checking exceptions
+2026-01-30 12:52:00,908:INFO:Preloading libraries
+2026-01-30 12:52:00,908:INFO:Set up data.
+2026-01-30 12:52:00,910:INFO:Set up index.
+2026-01-30 12:53:42,817:INFO:Initializing predict_model()
+2026-01-30 12:53:42,817:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001E1E77C0710>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000001E1E74CF550>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001E1E0365580>)
+2026-01-30 12:53:42,817:INFO:Checking exceptions
+2026-01-30 12:53:42,817:INFO:Preloading libraries
+2026-01-30 12:53:42,817:INFO:Set up data.
+2026-01-30 12:53:42,825:INFO:Set up index.
+2026-01-30 12:54:45,631:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:54:45,631:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:54:45,631:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:54:45,631:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 12:54:47,457:INFO:Initializing load_model()
+2026-01-30 12:54:47,457:INFO:load_model(model_name=models/catboost_classifier_model, platform=None, authentication=None, verbose=True)
+2026-01-30 12:54:59,270:INFO:Initializing predict_model()
+2026-01-30 12:54:59,270:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000264E0643410>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x00000264E05C4A50>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000264D9465120>)
+2026-01-30 12:54:59,271:INFO:Checking exceptions
+2026-01-30 12:54:59,271:INFO:Preloading libraries
+2026-01-30 12:54:59,271:INFO:Set up data.
+2026-01-30 12:54:59,274:INFO:Set up index.
+2026-01-30 12:58:49,373:INFO:Initializing predict_model()
+2026-01-30 12:58:49,373:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001E1E7A0E990>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000001E1E74CF550>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001E19FEA3560>)
+2026-01-30 12:58:49,377:INFO:Checking exceptions
+2026-01-30 12:58:49,377:INFO:Preloading libraries
+2026-01-30 12:58:49,377:INFO:Set up data.
+2026-01-30 12:58:49,380:INFO:Set up index.
+2026-01-30 13:10:25,935:INFO:Initializing predict_model()
+2026-01-30 13:10:25,935:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001E1E7BA6ED0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000001E1E74CF550>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001E1E713D8A0>)
+2026-01-30 13:10:25,935:INFO:Checking exceptions
+2026-01-30 13:10:25,935:INFO:Preloading libraries
+2026-01-30 13:10:25,935:INFO:Set up data.
+2026-01-30 13:10:25,945:INFO:Set up index.
+2026-01-30 13:14:52,287:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 13:14:52,287:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 13:14:52,287:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 13:14:52,287:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 13:14:53,915:INFO:Initializing load_model()
+2026-01-30 13:14:53,915:INFO:load_model(model_name=models/catboost_classifier_model, platform=None, authentication=None, verbose=True)
+2026-01-30 13:15:17,914:INFO:Initializing predict_model()
+2026-01-30 13:15:17,914:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002A44BFBCE50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000002A44BF94810>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002A44D28F4C0>)
+2026-01-30 13:15:17,914:INFO:Checking exceptions
+2026-01-30 13:15:17,914:INFO:Preloading libraries
+2026-01-30 13:15:17,914:INFO:Set up data.
+2026-01-30 13:15:17,916:INFO:Set up index.
+2026-01-30 13:17:21,595:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 13:17:21,597:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 13:17:21,597:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 13:17:21,597:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-01-30 13:17:23,092:INFO:Initializing load_model()
+2026-01-30 13:17:23,092:INFO:load_model(model_name=models/catboost_classifier_model, platform=None, authentication=None, verbose=True)
+2026-01-30 13:18:38,621:INFO:Initializing predict_model()
+2026-01-30 13:18:38,621:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002CE857DEB10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000002CE857C8550>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002CE7F669120>)
+2026-01-30 13:18:38,621:INFO:Checking exceptions
+2026-01-30 13:18:38,621:INFO:Preloading libraries
+2026-01-30 13:18:38,621:INFO:Set up data.
+2026-01-30 13:18:38,626:INFO:Set up index.
+2026-01-30 13:23:25,441:INFO:Initializing predict_model()
+2026-01-30 13:23:25,441:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002A405941510>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000002A44BF94810>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002A40598D9E0>)
+2026-01-30 13:23:25,441:INFO:Checking exceptions
+2026-01-30 13:23:25,441:INFO:Preloading libraries
+2026-01-30 13:23:25,441:INFO:Set up data.
+2026-01-30 13:23:25,448:INFO:Set up index.
+2026-01-30 13:23:51,957:INFO:Initializing load_model()
+2026-01-30 13:23:51,957:INFO:load_model(model_name=models/catboost_classifier_model, platform=None, authentication=None, verbose=True)
+2026-01-30 13:31:32,241:INFO:Initializing predict_model()
+2026-01-30 13:31:32,241:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002CE85F4CE10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000002CE857C8550>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002CE85B71C60>)
+2026-01-30 13:31:32,241:INFO:Checking exceptions
+2026-01-30 13:31:32,241:INFO:Preloading libraries
+2026-01-30 13:31:32,241:INFO:Set up data.
+2026-01-30 13:31:32,254:INFO:Set up index.
+2026-01-30 13:31:40,373:INFO:Initializing predict_model()
+2026-01-30 13:31:40,373:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002CE8B09C2D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['credit_score', 'age', 'tenure',
+                                             'balance', 'products_number',
+                                             'estimated_salary',
+                                             'balance_salary_ratio',
+                                             'tenure_age_ratio',
+                                             'credit_score_age_ratio',
+                                             'balance_per_product'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['gender'...
+                                    transformer=OneHotEncoder(cols=['country'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x000002CE857C8550>)]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002CE85B71580>)
+2026-01-30 13:31:40,373:INFO:Checking exceptions
+2026-01-30 13:31:40,373:INFO:Preloading libraries
+2026-01-30 13:31:40,373:INFO:Set up data.
+2026-01-30 13:31:40,394:INFO:Set up index.

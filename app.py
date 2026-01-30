@@ -12,7 +12,14 @@ st.set_page_config(
     page_icon="🏦",
     layout="wide"
 )
+#HEADER :--
+st.markdown("""
+<div style="text-align:center;">
+    <h2>🏦 Bank Customer Churn Prediction</h2>
+</div>
+""", unsafe_allow_html=True)
 
+st.divider()
 
 st.markdown("""
     <style>
@@ -72,38 +79,42 @@ def transform_data(df):
     
     return temp_df
 
-#SIDEBAR: ---
 with st.sidebar:
-    st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
-    st.image("https://cdn-icons-png.flaticon.com/512/2830/2830284.png", width=80)
-    st.title('Bank Customer Churn Predictor')
-    st.markdown("</div>", unsafe_allow_html=True)
-    
+
+# ---------------- SIDEBAR ----------------
+ with st.sidebar:
+    st.markdown("<h3 style='text-align:center;'>⚙️ Control Panel</h3>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align:center; color:#64748b;'>Configuration</p>", unsafe_allow_html=True)
     st.divider()
-    app_mode = st.radio("Navigation", ["Single Prediction", "Batch Analysis", "Data Insights"])
+
+    app_mode = st.selectbox(
+        "Prediction Mode",
+        ["Single Prediction", "Batch Analysis", "Data Insights"]
+    )
+
+
+    st.markdown("### 🎯 Churn Sensitivity")
+    risk_threshold = st.slider(
+        "Threshold",
+        0.05, 0.95, 0.5, 0.05,
+        help="Lower → More customers flagged (Recall)\nHigher → Fewer false alarms (Precision)"
+    )
+
     st.divider()
-    
-    #User-defined threshold for Risk Sensitivity
-    risk_threshold = st.slider("Churn Sensitivity Threshold", 0.05, 0.95, 0.5, 0.05,
-                              help=(
-        "Adjust the threshold to control how sensitive the model is to predicting churn. "
-        "Lower values increase the chance of flagging customers at risk (higher recall) "
-        "but may produce more false positives. "
-        "Recommended: 0.5 to balance risk detection and accuracy."
-    ))
-    
-    st.divider()
-    st.caption("v1.2.0 | Engine: CatBoost")
-    st.caption("Built by Rajeev Kumar")
+    st.markdown("""
+    <div style="text-align:center; font-size:13px; color:#64748b;">
+        <p>v1.2.0 | CatBoost Engine</p>
+    </div>
+    """, unsafe_allow_html=True)
+
 
 #MODE 1: SINGLE PREDICTION:---
 if app_mode == "Single Prediction":
-    st.title("📊 Individual Risk Assessment")
     col1, col2 = st.columns([2, 1])
     
     with col1:
         with st.container(border=True):
-            st.subheader("Customer Input Parameters")
+            st.markdown("<h3>Customer Input Parameters</h3>", unsafe_allow_html=True)
             c_a, c_b = st.columns(2)
             with c_a:
                 country = st.selectbox("Geography", ["France", "Spain", "Germany"])
@@ -112,9 +123,9 @@ if app_mode == "Single Prediction":
                 tenure = st.slider("Tenure (Years)", 0, 10, 5)
             with c_b:
                 credit_score = st.slider("Credit Score", 300, 850, 650)
-                balance = st.number_input("Balance ($)", 0.0, 300000.0, 10000.0)
+                balance = st.number_input("Balance ($)", 0.0, 300000.0, 10000.0, step=200.0)
                 products = st.number_input("Number of Products", 1, 4, 1)
-                salary = st.number_input("Estimated Salary ($)", 0.0, 300000.0, 50000.0)
+                salary = st.number_input("Estimated Salary ($)", 0.0, 300000.0, 50000.0, step=200.0)
             
             st.divider()
             c_c, c_d = st.columns(2)
@@ -168,7 +179,7 @@ elif app_mode == "Batch Analysis":
     
     if uploaded_file:
         raw_df = pd.read_csv(uploaded_file)
-        if st.button("Apply Batch Intelligence", use_container_width=True):
+        if st.button("Apply Prediction", use_container_width=True):
             with st.spinner("Processing records..."):
                 try:
                     processed_batch = transform_data(raw_df)
