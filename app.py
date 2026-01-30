@@ -174,7 +174,7 @@ if app_mode == "Single Prediction":
 
 #MODE 2: BATCH ANALYSIS:---
 elif app_mode == "Batch Analysis":
-    st.title("📂 Bulk Processing Engine")
+    st.subheader("📂 Bulk Processing Engine")
     uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
     
     if uploaded_file:
@@ -208,7 +208,7 @@ elif app_mode == "Batch Analysis":
 
 #MODE 3: MODEL INSIGHTS ---
 elif app_mode == "Data Insights":
-    st.title("🧠 Dataset Insights")
+    st.subheader("🧠 Dataset Insights")
     
     # Feature Importance (Simplified for View)
     feat_data = pd.DataFrame({
