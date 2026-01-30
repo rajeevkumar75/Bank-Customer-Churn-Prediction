@@ -1,5 +1,7 @@
 # **Bank Customer Churn Prediction:-**
 
+Live Demo: https://rajeevkumar75-bank-customer-churn-prediction-app-ict6p9.streamlit.app/
+
 Industry-oriented machine learning project to predict and rank bank customers by churn risk.
 
 🚧 Project under active development.
